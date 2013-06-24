@@ -1,0 +1,4 @@
+*.sublime-workspace
+/lib
+/gen
+/config/bolt/bootstrap*.js
