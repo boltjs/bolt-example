@@ -2,11 +2,13 @@ define(
   'bolt.demo.DemoMain',
 
   [
-    'bolt.demo.ModuleA'
+    'bolt.demo.ModuleA',
+    'JQuery'
   ],
 
-  function (ModuleA) {
+  function (ModuleA, $) {
     return function () {
+      console.log('winning');
     };
   }
 );

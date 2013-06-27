@@ -2,12 +2,13 @@ asynctest(
   'Script tag load test',
 
   [
-    'global!ephox.bolt.loader.api.scripttag'
+    'global!bolt.loader.api.ScriptTag'
   ],
 
   function (scripttag, onsuccess, onfailure) {
+console.log('asfas')
     console.log(scripttag)
-    scripttag.load('project/src/main/lib/example_library.js', function () {
+    scripttag.load('/base/test/js/browser/demo/sample.js', function () {
       console.log('loaded')
       if (rawexample)
         onsuccess();
