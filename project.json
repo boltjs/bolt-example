@@ -1,0 +1,13 @@
+{ 
+  "src": "src/js",
+  "output": "gen/bolt",
+  "build": {
+    "config": "config/bolt/prod.js",
+    "flat-modules": true,
+    "inline-main": "bolt.demo.DemoMain",
+    "inline-register": true,
+    "entry-groups": {
+      "demo": [ "src/js/bolt/demo/DemoMain.js" ]
+    }
+  }
+}
