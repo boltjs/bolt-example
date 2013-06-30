@@ -9,5 +9,15 @@
     "entry-groups": {
       "demo": [ "src/js/bolt/demo/DemoMain.js" ]
     }
+  },
+  "test": {
+    "node": {
+      "verbose": true,
+      "config": "config/bolt/node-test.js",
+      "tests": [
+        "test/js/node/demo/ModuleATest.js",
+        "test/js/node/demo/ModuleAOtherTest.js"
+      ]
+    }
   }
 }
